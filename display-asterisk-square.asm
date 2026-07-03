@@ -1,0 +1,25 @@
+.MODEL SMALL
+.STACK 100H
+
+.DATA
+    SQUARE DB '*******', 0DH, 0AH, '$'
+
+.CODE
+    MOV AX, @DATA
+    MOV DS, AX
+
+    LEA DX, SQUARE
+    MOV AH, 09H
+
+    INT 21H
+    INT 21H
+    INT 21H
+    INT 21H
+    INT 21H
+    INT 21H
+    INT 21H
+
+    MOV AH, 4CH
+    INT 21H
+
+END
