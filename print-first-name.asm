@@ -1,0 +1,16 @@
+ORG 100h
+MOV AH, 0Eh
+; Print "WEJDAN"
+MOV AL, 'W'
+INT 10h
+MOV AL, 'E'
+INT 10h
+MOV AL, 'J'
+INT 10h
+MOV AL, 'D'
+INT 10h
+MOV AL, 'A'
+INT 10h
+MOV AL, 'N'
+INT 10h
+RET
